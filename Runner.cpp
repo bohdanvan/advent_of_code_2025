@@ -1,5 +1,12 @@
-#include "day1/Day1.h"
+#include "day2/Day2.h"
+#include <iostream>
+#include <boost/stacktrace.hpp>
 
 int main() {
-    day1::run();
+    try {
+        day2::run();
+    } catch (const std::exception& e) {
+        const boost::stacktrace::stacktrace trace = boost::stacktrace::stacktrace::from_current_exception();
+        std::cerr << "Caught exception: " << e.what() << "\n" << trace;
+    }
 }

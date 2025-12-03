@@ -1,10 +1,16 @@
 cmake_minimum_required(VERSION 4.0)
 project(advent_of_code_2025)
-
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(
-    advent_of_code_2025
-        day1/day1.cpp
-        day1/day1.h
+find_package(Boost REQUIRED)
+
+add_executable(advent_of_code_2025
+        day1/Day1.cpp
+        day1/Day1.h
+        day2/Day2.cpp
+        day2/Day2.h
         runner.cpp)
+
+target_compile_definitions(advent_of_code_2025 PRIVATE _GNU_SOURCE)
+target_link_libraries(advent_of_code_2025 PRIVATE Boost::boost)
+target_link_options(advent_of_code_2025 PRIVATE -rdynamic)
