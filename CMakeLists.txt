@@ -9,7 +9,10 @@ add_executable(advent_of_code_2025
         day1/Day1.h
         day2/Day2.cpp
         day2/Day2.h
-        runner.cpp)
+        day3/Day3.cpp
+        day3/Day3.h
+        runner.cpp
+        day3/Day3.cpp)
 
 target_compile_definitions(advent_of_code_2025 PRIVATE _GNU_SOURCE)
 target_link_libraries(advent_of_code_2025 PRIVATE Boost::boost)
