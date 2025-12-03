@@ -1,13 +1,9 @@
 #include "Day3.h"
 #include <string>
-#include <filesystem>
 #include <fstream>
 #include <iostream>
-#include <sstream>
 
 namespace day3 {
-
-    using namespace std::string_literals;
 
     int run() {
         const std::filesystem::path inputPath = "../day3/input.txt";
