@@ -22,6 +22,9 @@ namespace day3 {
         if (s.empty() || digits == 0) {
             return std::make_pair(0, digits);
         }
+        if (s.length() <= digits) {
+            return std::make_pair(std::stol(std::string(s)), digits - s.length());
+        }
 
         const auto firstMaxIdx = std::distance(s.begin(), std::ranges::max_element(s));
         const auto [rightJoltage, remainingDigits] =
