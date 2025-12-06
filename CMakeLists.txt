@@ -13,6 +13,8 @@ add_executable(advent_of_code_2025
         day3/Day3.h
         day4/Day4.cpp
         day4/Day4.h
+        day5/Day5.cpp
+        day5/Day5.h
         runner.cpp)
 
 target_compile_definitions(advent_of_code_2025 PRIVATE _GNU_SOURCE)
