@@ -19,6 +19,8 @@ add_executable(advent_of_code_2025
         day6/Day6.h
         day7/Day7.cpp
         day7/Day7.h
+        day8/Day8.cpp
+        day8/Day8.h
         runner.cpp)
 
 target_compile_definitions(advent_of_code_2025 PRIVATE _GNU_SOURCE)
